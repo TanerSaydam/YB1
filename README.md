@@ -1,18 +1,28 @@
 # Yetenek Başakşehir 1. Grup Eğitim Reposu
 
-## 08.08.2024 (Sonraki ders)
-- Yeni bir AspNet Empty projesi oluşturacağız
-- Projemiz Todo Application olacak
-- Todo listemiz için class oluşturacağız ve bunu veri kabyolmayacak hale getireceğiz
-- Todo listemizi alabileceğimiz bir enpoint yazacağız
-- Todo kaydedebileceğimzin bir endpoint yazacağız
+## 10.08.2024 (Sonraki ders)
+- ServiceTool - Service Provider
+- Repository Pattern
+- Unit Of Work Pattern
 - Todo silebileceğimiz bir enpoint yazacağız
 - Todo SoftDelete yapacağımız bir enpoint yazacağız ve SoftDelete kavramını inceleyeceğiz
 - Todo update yapabileceğimiz bir enpoint yazacağız
+- Manuel Exception
+- Exception Handler
+- Design Pattern
+- Result Pattern
+- Dependency Injection
+- Extension Methods
+
+## 08.08.2024
+- Yeni bir AspNet Empty projesi oluşturacağız
+- Projemiz Todo Application olacak
+- Todo listemiz için class oluşturacağız ve bunu veri kaybolmayacak hale getireceğiz
+- Todo listemizi alabileceğimiz bir enpoint yazacağız
+- Todo kaydedebileceğimzin bir endpoint yazacağız
 - Projemizi EFCore ile InMemory Db'ye bağlayacağız
 - Metotlarımızı Db ile işlem yapabilir hale getireceğiz
-- Database'i MongoDb'ye çevireceğiz ve kodlarımı uygun hale getireceğiz
-- Dependency Injection ile Bağımlığı azaltıp Db de yaptığımız değişiklik gibi yapıları daha kolay yönetebilir hale getireceğiz
+- Database'i MSSQL'e çevireceğiz ve kodlarımı uygun hale getireceğiz
 
 ## 06.08.2024
 - API ve WebAPI nedir (kısa teknik incelemesini yaptık)

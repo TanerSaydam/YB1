@@ -1,10 +1,14 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using First.WebAPI.ContextModel;
+using Microsoft.AspNetCore.Mvc;
 
 namespace First.WebAPI.Controllers;
 
 [Route("api/[controller]")]
 public class TodosController : ControllerBase
 {
+    //primitive tpye => ilkel tipler
+    //string, int ,boolean, datetime, decimal, double, float...
+
     [HttpGet("GetAll/{name}")]
     public IActionResult GetAll(string name, int age)
     {
@@ -12,8 +16,26 @@ public class TodosController : ControllerBase
         Console.WriteLine();
         return Ok();
     }
-}
 
+    [HttpPost("ExampleHttpContext")]
+    public IActionResult Example([FromBody] MyHttpContext httpContext)
+    {
+        //işlemimi yapıyorum
+
+
+        HttpContextAccessor httpContextAccessor = new();
+
+        httpContext.Response.StatusCode = 200;
+        httpContext.Response.Body = new { Message = "Create is sucessfull" };
+
+
+        httpContextAccessor.HttpContext!.Response.StatusCode = 500;
+
+
+        return Ok(httpContext);
+
+    }
+}
 
 
 class Test : Test2//Test'im test'2 de public ya da protected olarak verilen her şeye sahip

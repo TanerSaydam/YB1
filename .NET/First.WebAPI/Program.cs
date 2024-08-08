@@ -1,6 +1,9 @@
 var builder = WebApplication.CreateBuilder(args);
 //Service Registration
+
 //Dependency Injection
+
+builder.Services.AddHttpContextAccessor();
 
 builder.Services.AddControllers();
 
