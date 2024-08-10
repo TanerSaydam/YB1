@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Todo.WebAPI.Context;
 using Todo.WebAPI.DTOs;
 using TodoModel = Todo.WebAPI.Models.Todo;
@@ -18,7 +19,7 @@ public class TodosController : ControllerBase
     [HttpGet]//API method type
     public IActionResult GetAll()
     {
-        List<Models.Todo> todos = context.Todos.ToList();
+        List<Models.Todo> todos = context.Todos.AsNoTracking().ToList();
 
         return Ok(todos);
     }
@@ -52,7 +53,9 @@ public class TodosController : ControllerBase
             return BadRequest(new { Message = "Todo not found" });
         }
 
-        context.Todos.Remove(todo);
+        //context.Todos.Remove(todo);
+
+        todo.IsDeleted = true;
         context.SaveChanges();
 
         return Ok(new { Message = "Delete was successful" });
@@ -61,7 +64,7 @@ public class TodosController : ControllerBase
     [HttpPut]
     public IActionResult Update(UpdateTodoDto request)
     {
-        TodoModel? todo = context.Todos.Find(request.Id);
+        TodoModel? todo = context.Todos.Find(request.Id);//tracking mekanızmasını kapatmadıysak
 
         if (todo is null)
         {
@@ -72,7 +75,7 @@ public class TodosController : ControllerBase
         todo.Work = request.Work;
         todo.DeadLine = request.DeadLine;
 
-        context.Update(todo);
+        //context.Update(todo);//şunu illa yazmamıza gerek yok// tracking mekanızması açıksa buna ihtiyacımız yok
         context.SaveChanges();
 
         return Ok(new { Message = "Todo update was successful" });

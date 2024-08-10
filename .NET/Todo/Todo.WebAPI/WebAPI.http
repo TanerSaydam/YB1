@@ -13,4 +13,9 @@ Accept: application/json
 
 ###
 
-DELETE http://localhost:5218/api/Todos/DeleteById?id=1737f27b-cb28-459c-9c70-8d03163d23e1
+DELETE http://localhost:5218/api/Todos/DeleteById?id=34cb8e4e-9003-47e0-9bbf-00024b1b4891
+
+
+###
+
+GET http://localhost:5218/seed-data

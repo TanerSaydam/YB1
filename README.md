@@ -1,18 +1,23 @@
 # Yetenek Başakşehir 1. Grup Eğitim Reposu
 
-## 10.08.2024 (Sonraki ders)
-- ServiceTool - Service Provider
+## 11.08.2024 (Sonraki ders)
+- Personel Kayıt projesi yapacağız
+- Dosya işlemleri
 - Repository Pattern
 - Unit Of Work Pattern
-- Todo silebileceğimiz bir enpoint yazacağız
-- Todo SoftDelete yapacağımız bir enpoint yazacağız ve SoftDelete kavramını inceleyeceğiz
-- Todo update yapabileceğimiz bir enpoint yazacağız
 - Manuel Exception
 - Exception Handler
 - Design Pattern
 - Result Pattern
 - Dependency Injection
+
+## 10.08.2024
+- ServiceTool - Service Provider
+- Todo silebileceğimiz bir enpoint yazacağız
+- Todo SoftDelete yapacağımız bir enpoint yazacağız ve SoftDelete kavramını inceleyeceğiz
+- Todo update yapabileceğimiz bir enpoint yazacağız
 - Extension Methods
+- Benchmark ile performans ölçümü
 
 ## 08.08.2024
 - Yeni bir AspNet Empty projesi oluşturacağız

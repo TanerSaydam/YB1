@@ -1,4 +1,4 @@
-﻿namespace Todo.WebAPI.Models;
+﻿namespace Todo.Benchmark.ConsoleApp.Models;
 
 public class Todo
 {
