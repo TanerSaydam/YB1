@@ -8,10 +8,8 @@ public class Todo
     }
     public Guid Id { get; set; }
     public string Work { get; set; } = default!;
+    public DateOnly DeadLine { get; set; } //sadece tarih alır // 2024-08-10
+    //public DateTime DateTime { get; set; } //tarih + saat alır // 2024-08-10 15:33:15.000
+    //public TimeOnly TimeOnly { get; set; } //sadece saat alır //15:33:15.000
+    //public DateTimeOffset DateTimeOffset { get; set; } //UTC formatlarını alır 2024-08-10 12:33:15.000
 }
-
-//string = null
-//int = 0
-//boolean = false (0)
-//datetime = 01.01.0001 00:00:00
-//guid 0000-0000-0000-0000

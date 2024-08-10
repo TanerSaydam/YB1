@@ -1,0 +1,16 @@
+POST http://localhost:5218/api/Todos/Create
+Content-Type: application/json
+
+{
+  "work": "Deneme",
+  "deadLine": "2024-08-10"
+}
+
+###
+
+GET http://localhost:5218/api/Todos/GetAll
+Accept: application/json
+
+###
+
+DELETE http://localhost:5218/api/Todos/DeleteById?id=1737f27b-cb28-459c-9c70-8d03163d23e1
