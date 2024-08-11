@@ -25,4 +25,22 @@ app.Run();
 //IoC container
 //Inversion Of Control
 
-//15:21 görüþelim
+
+//Tuple
+//class A
+//{
+//    public A()
+//    {
+//        var person = GetPersonelInfo();
+
+//        Console.WriteLine(@$"
+//                  Name: {person.firstName}\n
+//                  LastName: {person.lastName}\n
+//                  Age: {person.age}");
+//    }
+
+//    public (string firstName, string lastName, int age) GetPersonelInfo()
+//    {
+//        return ("Taner", "Saydam", 50);
+//    }
+//}

@@ -1,7 +1,7 @@
 # Yetenek Başakşehir 1. Grup Eğitim Reposu
 
-## 11.08.2024 (Sonraki ders)
-- Personel Kayıt projesi yapacağız
+## 13.08.2024 (Sonraki ders)
+- Personel Create, Delete ve Update metotları
 - Dosya işlemleri
 - Repository Pattern
 - Unit Of Work Pattern
@@ -10,6 +10,21 @@
 - Design Pattern
 - Result Pattern
 - Dependency Injection
+
+## 11.08.2024
+- Personel Kayıt projesi yapacağız
+- Projenin oluşturulması
+- Controller yapısının IoC container'ına dahil edilmesi
+- Swagger'ın projeye dahil edilmesi
+- Personel için model classı oluşturulması
+- Sealed keywordü
+- Guid ve Ulid yapıları
+- EFCore ile MSSQL için DbContext oluşturulması
+- DI ile DbContex connection
+- Personel class propertylerinin column type olarak özelleştirilmesi
+- DataAnnotations ve OnModelCreating
+- SeedData mantığı ve fake veri üretme (Bogus NuGet package)
+- Personel Getall ve SeedData metotları
 
 ## 10.08.2024
 - ServiceTool - Service Provider

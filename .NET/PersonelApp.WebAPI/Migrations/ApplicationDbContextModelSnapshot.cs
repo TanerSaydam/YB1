@@ -46,7 +46,7 @@ namespace PersonelApp.WebAPI.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Personels");
+                    b.ToTable("Personels", (string)null);
                 });
 #pragma warning restore 612, 618
         }
