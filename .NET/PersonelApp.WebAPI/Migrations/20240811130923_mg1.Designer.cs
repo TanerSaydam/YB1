@@ -12,7 +12,7 @@ using PersonelApp.WebAPI.Context;
 namespace PersonelApp.WebAPI.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240811123457_mg1")]
+    [Migration("20240811130923_mg1")]
     partial class mg1
     {
         /// <inheritdoc />
