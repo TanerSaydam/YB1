@@ -12,7 +12,7 @@ using PersonelApp.WebAPI.Context;
 namespace PersonelApp.WebAPI.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240811115704_mg1")]
+    [Migration("20240811123457_mg1")]
     partial class mg1
     {
         /// <inheritdoc />
@@ -28,21 +28,21 @@ namespace PersonelApp.WebAPI.Migrations
             modelBuilder.Entity("PersonelApp.WebAPI.Models.Personel", b =>
                 {
                     b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
+                        .HasColumnType("varchar(100)");
 
                     b.Property<DateOnly>("DateOfBirth")
                         .HasColumnType("date");
 
                     b.Property<string>("FirstName")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("varchar(50)");
 
                     b.Property<string>("LastName")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("varchar(50)");
 
                     b.Property<decimal>("Salary")
-                        .HasColumnType("decimal(18,2)");
+                        .HasColumnType("money");
 
                     b.Property<DateOnly>("StartingDate")
                         .HasColumnType("date");

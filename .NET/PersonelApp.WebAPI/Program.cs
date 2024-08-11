@@ -24,3 +24,5 @@ app.MapControllers();
 app.Run();
 //IoC container
 //Inversion Of Control
+
+//15:21 görüþelim

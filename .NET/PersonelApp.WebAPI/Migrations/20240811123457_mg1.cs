@@ -15,12 +15,12 @@ namespace PersonelApp.WebAPI.Migrations
                 name: "Personels",
                 columns: table => new
                 {
-                    Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    FirstName = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    LastName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Id = table.Column<string>(type: "varchar(100)", nullable: false),
+                    FirstName = table.Column<string>(type: "varchar(50)", nullable: false),
+                    LastName = table.Column<string>(type: "varchar(50)", nullable: false),
                     DateOfBirth = table.Column<DateOnly>(type: "date", nullable: false),
                     StartingDate = table.Column<DateOnly>(type: "date", nullable: false),
-                    Salary = table.Column<decimal>(type: "decimal(18,2)", nullable: false)
+                    Salary = table.Column<decimal>(type: "money", nullable: false)
                 },
                 constraints: table =>
                 {
