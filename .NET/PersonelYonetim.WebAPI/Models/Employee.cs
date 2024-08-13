@@ -1,17 +1,16 @@
-﻿namespace PersonelApp.WebAPI.Models;
+﻿namespace PersonelYonetim.WebAPI.Models;
 
-public sealed class Personel
+public sealed class Employee
 {
-    public Personel()
+    public Employee()
     {
         Id = Ulid.NewUlid().ToString();
     }
     public string Id { get; set; }
+    public string AvatarFileName { get; set; } = default!;
     public string FirstName { get; set; } = default!;
     public string LastName { get; set; } = default!;
-    public string FullName => $"{FirstName} {LastName}";
-    public string StringSalary => "₺" + Salary.ToString("n2");
-    public string StringDateOfBirth => DateOfBirth.ToString("dd.MM.yyyy");
+    public string FullName => string.Join(" ", FirstName, LastName);
     public DateOnly DateOfBirth { get; set; }
     public DateOnly StartingDate { get; set; }
     public decimal Salary { get; set; }

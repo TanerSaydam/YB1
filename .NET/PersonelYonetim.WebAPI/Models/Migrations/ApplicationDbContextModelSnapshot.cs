@@ -3,20 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
-using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using PersonelApp.WebAPI.Context;
+using PersonelYonetim.WebAPI.Context;
 
 #nullable disable
 
-namespace PersonelApp.WebAPI.Migrations
+namespace PersonelYonetim.WebAPI.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240811130923_mg1")]
-    partial class mg1
+    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
     {
-        /// <inheritdoc />
-        protected override void BuildTargetModel(ModelBuilder modelBuilder)
+        protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -25,10 +22,14 @@ namespace PersonelApp.WebAPI.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("PersonelApp.WebAPI.Models.Personel", b =>
+            modelBuilder.Entity("PersonelYonetim.WebAPI.Models.Employee", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("varchar(100)");
+
+                    b.Property<string>("AvatarFileName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateOnly>("DateOfBirth")
                         .HasColumnType("date");
@@ -49,7 +50,7 @@ namespace PersonelApp.WebAPI.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Personels");
+                    b.ToTable("Employees");
                 });
 #pragma warning restore 612, 618
         }

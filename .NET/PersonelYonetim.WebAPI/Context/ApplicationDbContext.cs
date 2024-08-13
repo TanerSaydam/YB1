@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using PersonelApp.WebAPI.Models;
+using PersonelYonetim.WebAPI.Models;
 
-namespace PersonelApp.WebAPI.Context;
+namespace PersonelYonetim.WebAPI.Context;
 
 public sealed class ApplicationDbContext : DbContext
 {
@@ -9,7 +9,7 @@ public sealed class ApplicationDbContext : DbContext
     {
     }
 
-    public DbSet<Personel> Personels { get; set; }
+    public DbSet<Employee> Employees { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -18,7 +18,7 @@ public sealed class ApplicationDbContext : DbContext
         //modelBuilder.Entity<Personel>().Property(p => p.LastName).HasColumnType("varchar(50)");
         //modelBuilder.Entity<Personel>().Property(p => p.Salary).HasColumnType("money");
 
-        modelBuilder.Entity<Personel>(builder =>
+        modelBuilder.Entity<Employee>(builder =>
         {
             builder.Property(p => p.Id).HasColumnType("varchar(100)");
             builder.Property(p => p.FirstName).HasColumnType("varchar(50)");

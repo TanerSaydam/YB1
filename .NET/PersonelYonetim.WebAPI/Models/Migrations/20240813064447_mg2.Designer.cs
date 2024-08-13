@@ -3,17 +3,20 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using PersonelApp.WebAPI.Context;
+using PersonelYonetim.WebAPI.Context;
 
 #nullable disable
 
-namespace PersonelApp.WebAPI.Migrations
+namespace PersonelYonetim.WebAPI.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240813064447_mg2")]
+    partial class mg2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -22,7 +25,7 @@ namespace PersonelApp.WebAPI.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("PersonelApp.WebAPI.Models.Personel", b =>
+            modelBuilder.Entity("PersonelYonetim.WebAPI.Models.Employee", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("varchar(100)");
@@ -46,7 +49,7 @@ namespace PersonelApp.WebAPI.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Personels", (string)null);
+                    b.ToTable("Employees");
                 });
 #pragma warning restore 612, 618
         }

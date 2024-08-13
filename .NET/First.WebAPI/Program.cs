@@ -14,5 +14,4 @@ app.MapGet("/taner", () => "Hello Taner, How are you?");
 
 app.MapControllers();
 
-
 app.Run();
