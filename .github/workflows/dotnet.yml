@@ -29,7 +29,7 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
         server: ${{ secrets.FTP_HOST }}
-        username: ${{ secrets.FTP_USERNAME }
-        password: ${{ secrets.FTP_PASSWORD }
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./publish/
         server-dir: /test.ecnorow.com/
