@@ -25,3 +25,11 @@ jobs:
       run: dotnet test ./.NET/First.WebAPI/First.WebAPI.sln --no-build --verbosity normal
     - name: Publish
       run: dotnet publish ./.NET/First.WebAPI/First.WebAPI.sln -c Release --output ./publish
+    - name: FTP Deploy
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      with:
+        server: ${{ secrets.FTP_HOST }}
+        username: ${{ secrets.FTP_USERNAME }
+        password: ${{ secrets.FTP_PASSWORD }
+        local-dir: ./publish/
+        server-dir: /test.ecnorow.com/
