@@ -1,8 +1,8 @@
 # Yetenek Başakşehir 1. Grup Eğitim Reposu
 
-## 13.08.2024 (Sonraki ders)
-- Personel Create, Delete ve Update metotları
-- Dosya işlemleri
+## 15.08.2024 (Sonraki ders)
+- Array üzerinden MimeType kontrol için Extensions metot yazacağız
+- NuGet package yazmasını öğreneceğiz
 - Repository Pattern
 - Unit Of Work Pattern
 - Manuel Exception
@@ -10,6 +10,10 @@
 - Design Pattern
 - Result Pattern
 - Dependency Injection
+
+## 13.08.2024
+- Personel Create, Delete ve Update metotları
+- Dosya işlemleri
 
 ## 11.08.2024
 - Personel Kayıt projesi yapacağız
