@@ -10,6 +10,8 @@ builder.Services.AddControllers();
 var app = builder.Build();
 //Middleware
 
+app.MapGet("/taner", () => "Hello Taner, How are you?");
+
 app.MapControllers();
 
 
