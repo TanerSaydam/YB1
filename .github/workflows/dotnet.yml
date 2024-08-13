@@ -20,7 +20,7 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore ./.NET/First.WebAPI/First.WebAPI.sln
     - name: Build
-      run: dotnet build ./.NET/First.WebAPI/First.WebAPI.sln --no-restore
+      run: dotnet build ./.NET/First.WebAPI/First.WebAPI.sln -c Release --no-restore
     - name: Test
       run: dotnet test --no-build --verbosity normal
     - name: Publish
