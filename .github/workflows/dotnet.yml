@@ -18,7 +18,7 @@ jobs:
       with:
         dotnet-version: 8.0.x
     - name: Restore dependencies
-      run: dotnet restore
+      run: dotnet restore ./.NET/First.WebAPI/First.WebAPI.sln
     - name: Build
       run: dotnet build ./.NET/First.WebAPI/First.WebAPI.sln --no-restore
     - name: Test
