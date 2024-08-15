@@ -1,15 +1,19 @@
 # Yetenek Başakşehir 1. Grup Eğitim Reposu
 
-## 15.08.2024 (Sonraki ders)
-- Array üzerinden MimeType kontrol için Extensions metot yazacağız
-- NuGet package yazmasını öğreneceğiz
+## 17.08.2024 (Sonraki ders)
 - Repository Pattern
 - Unit Of Work Pattern
+- Dependency Injection
+- Postgre SQL ile farklı Db kullanımı
 - Manuel Exception
 - Exception Handler
 - Design Pattern
 - Result Pattern
-- Dependency Injection
+
+## 15.08.2024
+- Array üzerinden MimeType kontrol için Extensions metot yazacağız
+- NuGet package yazmasını öğreneceğiz
+- Service Yapısı ve SOLID'in S harfi
 
 ## 13.08.2024
 - Personel Create, Delete ve Update metotları
