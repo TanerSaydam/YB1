@@ -31,20 +31,7 @@ public sealed class EmployeesController(
             return BadRequest(new { Message = "You need to upload files smaller than 1mb" });
         }
 
-        using (var memoryStream = new MemoryStream())
-        {
-            request.Avatar.CopyTo(memoryStream);
-
-            var avatarArray = memoryStream.ToArray();
-
-            //137 80 78 71 => png
-            //255 216 255 224 => jpg
-
-            if (avatarArray[0] != 137 && avatarArray[0] != 255)
-            {
-                return BadRequest(new { Message = "Image type is not supported. You can only upload just JPG | PNG | GIF format" });
-            }
-        }
+        request.Avatar.IsItAnImageFileType();
 
         string fileName = string.Join(".", DateTime.Now.ToFileTime().ToString(), request.Avatar.FileName);
         using (var stream = System.IO.File.Create($"wwwroot/avatars/{fileName}"))
