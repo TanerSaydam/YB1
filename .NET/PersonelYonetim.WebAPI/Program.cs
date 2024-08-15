@@ -1,13 +1,17 @@
 using Microsoft.EntityFrameworkCore;
 using PersonelYonetim.WebAPI.Context;
+using PersonelYonetim.WebAPI.Services;
 
 var builder = WebApplication.CreateBuilder(args);
+
 
 builder.Services.AddDbContext<ApplicationDbContext>(option =>
 {
     string connectionString = builder.Configuration.GetConnectionString("SqlServer")!;
     option.UseSqlServer(connectionString);
 });
+
+builder.Services.AddTransient<EmployeeService>();
 
 builder.Services.AddControllers();
 
