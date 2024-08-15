@@ -1,0 +1,51 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageId>MyUpperCase</PackageId>
+    <Title>My upper case</Title>
+    <Version>8.0.1</Version>
+    <Authors>Taner Saydam</Authors>
+    <Company>Saydam Tech</Company>
+    <Product>MyUpperCase</Product>
+    <Description>Bu bir test NuGet package</Description>
+    <Copyright></Copyright>
+    <PackageProjectUrl>https://www.tanersaydam.net</PackageProjectUrl>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <IncludeSymbols>False</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <PackageIcon>1-09.jpg</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/TanerSaydam/YB1</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>uppercase</PackageTags>
+    <PackageReleaseNotes>Bu bit test paketidir</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="D:\GitHub\Kişisel\Introlar\taner saydam logo teslim\jpg\1-09.jpg">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="IYK.MyUpperCase" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
