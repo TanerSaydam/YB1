@@ -1,14 +1,23 @@
 # Yetenek Başakşehir 1. Grup Eğitim Reposu
 
-## 17.08.2024 (Sonraki ders)
-- Repository Pattern
-- Unit Of Work Pattern
+## 18.08.2024 (Sonraki ders)
 - Dependency Injection
-- Postgre SQL ile farklı Db kullanımı
 - Manuel Exception
 - Exception Handler
 - Design Pattern
 - Result Pattern
+- OData
+- Rate Limit
+- Health Check
+- Response Compression
+
+## 17.08.2024
+- Repository Pattern
+- Docker kurulumu (Detaylı anlatılmadı sadece özet geçildi)
+- Docker Compose (Detaylı anlatılmadı sadece özet geçildi)
+- ElasticSearch ile Db Değişimi
+- Unit Of Work Pattern
+- Transaction bahsettim
 
 ## 15.08.2024
 - Array üzerinden MimeType kontrol için Extensions metot yazacağız

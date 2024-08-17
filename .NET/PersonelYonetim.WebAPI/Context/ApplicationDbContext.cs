@@ -1,9 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using PersonelYonetim.WebAPI.Models;
+using PersonelYonetim.WebAPI.Repositories;
 
 namespace PersonelYonetim.WebAPI.Context;
 
-public sealed class ApplicationDbContext : DbContext
+public sealed class ApplicationDbContext : DbContext, IUnitOfWork
 {
     public ApplicationDbContext(DbContextOptions options) : base(options)
     {
@@ -27,4 +28,3 @@ public sealed class ApplicationDbContext : DbContext
         });
     }
 }
-

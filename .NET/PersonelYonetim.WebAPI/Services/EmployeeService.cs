@@ -1,13 +1,14 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using PersonelYonetim.WebAPI.Context;
 using PersonelYonetim.WebAPI.DTOs;
 using PersonelYonetim.WebAPI.Models;
+using PersonelYonetim.WebAPI.Repositories;
 
 namespace PersonelYonetim.WebAPI.Services;
 
 public sealed class EmployeeService(
-    ApplicationDbContext context)
+    IEmployeeRepository employeeRepository,
+    IUnitOfWork unitOfWork
+    )
 {
     public string Create([FromForm] CreateEmployeeDto request)
     {
@@ -33,37 +34,34 @@ public sealed class EmployeeService(
             Salary = request.Salary,
         };
 
-        context.Add(employee);
-        context.SaveChanges();
+        employeeRepository.Create(employee);
+        unitOfWork.SaveChanges();
 
         return employee.Id;
     }
 
     public List<Employee> GetAll()
     {
-        var employees = context.Employees
-            .AsNoTracking()
-            .OrderBy(p => p.FirstName)
-            .ToList();
+        var employees = employeeRepository.GetAll();
 
         return employees;
     }
 
     public void DeleteById(string id)
     {
-        Employee? employee = context.Employees.Find(id);
+        Employee? employee = employeeRepository.GetById(id);
         if (employee is null)
         {
             throw new ArgumentException("Employee not found");
         }
 
-        context.Remove(employee);
-        context.SaveChanges();
+        employeeRepository.Delete(employee);
+        unitOfWork.SaveChanges();
     }
 
     public void Update(UpdateEmployeeDto request)
     {
-        Employee? employee = context.Employees.Find(request.Id.ToString());
+        Employee? employee = employeeRepository.GetById(request.Id.ToString());
         if (employee is null)
         {
             throw new ArgumentException("Employee not found");
@@ -75,6 +73,7 @@ public sealed class EmployeeService(
         employee.StartingDate = request.StartingDate;
         employee.Salary = request.Salary;
 
-        context.SaveChanges();
+        employeeRepository.Update(employee);
+        unitOfWork.SaveChanges();
     }
 }
