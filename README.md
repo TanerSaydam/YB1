@@ -1,16 +1,20 @@
 # Yetenek Başakşehir 1. Grup Eğitim Reposu
 
-## 18.08.2024 (Sonraki ders)
+## 20.08.2024 (Sonraki ders)
+- Angular başlıyoruz
+- Birkaç uygulama yapacağız
+- OData
+- Rate Limit
+- Health Check
+- Response Compression
+
+## 18.08.2024
 - Speech.Regonation Sesli komut ile işlem yaptırma
 - Dependency Injection
 - Manuel Exception
 - Exception Handler
 - Design Pattern
 - Result Pattern
-- OData
-- Rate Limit
-- Health Check
-- Response Compression
 
 ## 17.08.2024
 - Repository Pattern
