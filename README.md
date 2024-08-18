@@ -1,6 +1,7 @@
 # Yetenek Başakşehir 1. Grup Eğitim Reposu
 
 ## 18.08.2024 (Sonraki ders)
+- Speech.Regonation Sesli komut ile işlem yaptırma
 - Dependency Injection
 - Manuel Exception
 - Exception Handler
