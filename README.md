@@ -1,12 +1,20 @@
 # Yetenek Başakşehir 1. Grup Eğitim Reposu
 
-## 20.08.2024 (Sonraki ders)
+## Daha sonra yapacağız
 - Angular başlıyoruz
 - Birkaç uygulama yapacağız
 - OData
 - Rate Limit
 - Health Check
 - Response Compression
+
+## 22.08.2024 (Sonraki ders)
+- HepsiBurada'nın ana sayfasını HTML ve CSS ile yapacağız
+- Responsive yapı ile telefona uyumlu hale getireceğiz
+
+## 20.08.2024
+- HTML ve CSS başladık
+- Portfolio sitesi yaptık
 
 ## 18.08.2024
 - Speech.Regonation Sesli komut ile işlem yaptırma
