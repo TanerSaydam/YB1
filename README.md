@@ -8,9 +8,12 @@
 - Health Check
 - Response Compression
 
-## 22.08.2024 (Sonraki ders)
+## 24.08.2024 (Sonraki ders)
+- JS Başlıyoruz
+
+## 22.08.2024
 - HepsiBurada'nın ana sayfasını HTML ve CSS ile yapacağız
-- Responsive yapı ile telefona uyumlu hale getireceğiz
+- Ödev: Renk çizgisinden sonraki birkaç parçayı tasarlayın
 
 ## 20.08.2024
 - HTML ve CSS başladık
