@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.content{
+    padding: 10px 20%;
+}
+
+.part1{
+    margin-bottom: 20px;
+}
+
+.part1 button{
+    width: 100%;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.part2{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.part2 div{
+    width: 32.9%;
+    height: 250px;
+    border: 1px solid;
+    font-size: 90px;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.part2 div:hover{
+    background-color: #f1f1f1;
+}
+
+.part3{    
+    border-radius: 5px;
+    margin-top: 5px;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0px;
+    color: green;
+    background-color: #f1f1f1;
+}
+
+del{
+    color: red;
+}
+
+@media screen and (max-width:1600px) {
+    .part2 div{
+        height: 200px;
+    }
+}
+
+@media screen and (max-width:1350px) {
+    .part2 div{
+        height: 150px;
+    }
+}
+
+@media screen and (max-width:780px) {
+    .part2 div{
+        width: 30%;
+        height: 100px;
+    }
+}

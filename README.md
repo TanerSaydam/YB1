@@ -8,8 +8,21 @@
 - Health Check
 - Response Compression
 
-## 24.08.2024 (Sonraki ders)
+## 25.08.2024 (Sonraki ders)
+- Örnek XoX Oyununu tamamlayacağız
+- .NET WebAPI ve HTML, CSS ve JS ile bir proje yapacağız
+
+## 24.08.2024
 - JS Başlıyoruz
+- Javascript nedir? 
+- EcmaScript nedir?
+- Değişkenler
+- Döngüler
+- Methodlar
+- Elementlere müdahele etme
+- Undefined
+- Örnek Todo Create ve List işlemi
+- Örnek XoX Oyunu yapmaya başladık
 
 ## 22.08.2024
 - HepsiBurada'nın ana sayfasını HTML ve CSS ile yapacağız
