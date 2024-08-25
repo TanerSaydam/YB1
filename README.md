@@ -8,9 +8,21 @@
 - Health Check
 - Response Compression
 
-## 25.08.2024 (Sonraki ders)
-- Örnek XoX Oyununu tamamlayacağız
-- .NET WebAPI ve HTML, CSS ve JS ile bir proje yapacağız
+## 27.08.2024 (Sonraki ders)
+- Örnek eTicaret projemize devam ediyoruz
+
+## 25.08.2024
+- Örnek XoX Oyununu tamamladık
+- Ödevleri yaptık
+- .NET WebAPI ve HTML, CSS ve JS ile bir projeye başladık
+- WebAPI projemizi CLI komutlarıyla oluşturduk
+- Controller özelliği ekledik
+- Category Modelimizi ekledik
+- EF Core kütüphanesini kurduk
+- Context Yapımızı kodladık ve OnModelCreating'i Asssembly ile nasıl otomatikleştirebileceğimizi inceledik
+- Configuration dosyaları oluşturduk
+- Generic Repository kodlamaya başladık
+- Asenkron yapıları teoride inceledik
 
 ## 24.08.2024
 - JS Başlıyoruz
