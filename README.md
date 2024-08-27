@@ -14,6 +14,7 @@
 ## 25.08.2024
 - Örnek XoX Oyununu tamamladık
 - Ödevleri yaptık
+- Örnek eTicaret projemize başladık
 - .NET WebAPI ve HTML, CSS ve JS ile bir projeye başladık
 - WebAPI projemizi CLI komutlarıyla oluşturduk
 - Controller özelliği ekledik

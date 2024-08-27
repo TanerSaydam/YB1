@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1>
+    <select onclick="getLang(event)">
+        <option value="tr"></option>
+        <option value="en"></option>
+    </select>
+
+    <p id="description"></p>
+
+    <script>
+        const h1El = document.querySelector("h1");
+        const optionsEl = document.querySelectorAll("option");
+        const pEl = document.querySelector("#description");        
+
+        console.log(document.location.href);
+        
+
+        setLang("tr")
+
+        function setLang(val){            
+            fetch(`./assets/${val}.json`)
+            .then(res=> res.json())
+            .then(langs => {
+                h1El.innerText = langs["title"];
+                pEl.innerText = langs["description"];                
+                optionsEl[0].innerText = langs["turkish"];
+                optionsEl[1].innerText = langs["english"];
+            });
+        }
+
+        function getLang(event){            
+            const val = event.target.value;
+
+           setLang(val)
+
+        }
+    </script>
+</body>
+</html>
