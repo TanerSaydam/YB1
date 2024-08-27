@@ -13,9 +13,13 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 builder.Services.AddTransient<CategoryRepository>();
 builder.Services.AddTransient<CategoryService>();
 
+builder.Services.AddCors();
+
 builder.Services.AddControllers();
 
 var app = builder.Build();
+
+app.UseCors(x => x.AllowAnyHeader().AllowAnyOrigin().AllowAnyMethod());
 
 app.MapControllers();
 

@@ -8,8 +8,22 @@
 - Health Check
 - Response Compression
 
-## 27.08.2024 (Sonraki ders)
+## 29.08.2024 (Sonraki ders)
 - Örnek eTicaret projemize devam ediyoruz
+- CORS nedir?
+
+## 27.08.2024
+- Örnek eTicaret projemize devam ediyoruz
+- Generic repository yapımızı tamamladık
+- Category repository oluşturduk ve DI kodunu yazdık
+- Category service oluşturduk
+- Category controller oluşturup GetAll ve Create için endpoint yazdık ve test ettik
+- Frontend için yapı kurmaya başladık
+- Index ve Categories sayfaları oluşturduk
+- Bootstrap dahil ettik ve bir tasarım yaptık
+- Google Font Poppins dahil ettik
+- GetAll için API isteği yaptık ve sonucu console'a bastık
+- Backend CORS politikası yazdık ama derinlemesine incelemedik, önümüzdeki ders inceleyeceğiz
 
 ## 25.08.2024
 - Örnek XoX Oyununu tamamladık
