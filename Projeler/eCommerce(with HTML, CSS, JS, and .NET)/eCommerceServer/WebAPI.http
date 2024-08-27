@@ -1,0 +1,7 @@
+GET https://localhost:7233/api/Categories/GetAll
+
+
+###
+
+GET https://localhost:7233/api/Categories/Create?name=test3
+

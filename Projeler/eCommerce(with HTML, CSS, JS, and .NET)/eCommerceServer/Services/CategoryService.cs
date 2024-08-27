@@ -10,4 +10,14 @@ public sealed class CategoryService(CategoryRepository categoryRepository)
         var response = await categoryRepository.GetAllAsync(cancellationToken);
         return response;
     }
+
+    public async Task CreateAsync(string name, CancellationToken cancellationToken = default)
+    {
+        Category category = new()
+        {
+            Name = name,
+        };
+
+        await categoryRepository.CreateAsync(category, cancellationToken);
+    }
 }

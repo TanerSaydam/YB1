@@ -12,4 +12,11 @@ public sealed class CategoriesController(CategoryService categoryService) : Cont
         var response = await categoryService.GetAllAsync(cancellationToken);
         return Ok(response);
     }
+
+    [HttpGet]
+    public async Task<IActionResult> Create(string name, CancellationToken cancellationToken)
+    {
+        await categoryService.CreateAsync(name, cancellationToken);
+        return Created();
+    }
 }
