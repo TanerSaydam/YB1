@@ -26,8 +26,8 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="./categories.html">Categories</a>
-                    </li>                   
-                </ul>                
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
@@ -50,34 +50,53 @@
                 <p>Category List</p>
             </div>
             <div class="card-body">
-                <div class="form-group">
+                <div class="form-group" style="display: flex; justify-content: space-between;">
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addModal">
+                        <span>Add Category</span>
+                    </button>
 
+                    <input type="search" style="width: 200px;" class="form-control" placeholder="Search something...">
                 </div>
-
-                <div class="form-group">
+                <hr>
+                <div class="form-group mt-2">
                     <table class="table table-hover">
                         <thead>
                             <tr>
                                 <th>#</th>
                                 <th>Name</th>
                                 <th>Operations</th>
-                            </tr>                            
+                            </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>Test</td>
-                                <td>
-                                    <button class="btn btn-primary me-1">Edit</button>
-                                    <button class="btn btn-danger">Delete</button>
-                                </td>
-                            </tr>
+
                         </tbody>
                     </table>
                 </div>
             </div>
         </div>
     </div>
+
+    <div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5">Add Category</h1>
+                    <button type="button" id="addModalCloseBtn" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input type="text" id="name" class="form-control">
+                    </div>
+                </div>
+                <div class="modal-footer">                    
+                    <button type="button" onclick="save()" class="btn btn-primary w-100">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/script.js"></script>
 </body>
