@@ -27,7 +27,7 @@ public sealed class CategoriesController(CategoryService categoryService) : Cont
         return NoContent();
     }
 
-    [HttpDelete("{id}")]
+    [HttpPut("{id}")]
     public async Task<IActionResult> Update(Guid id, string name, CancellationToken cancellationToken)
     {
         await categoryService.UpdateAsync(id, name, cancellationToken);

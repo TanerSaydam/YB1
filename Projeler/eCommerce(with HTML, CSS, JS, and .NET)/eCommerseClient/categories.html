@@ -55,7 +55,7 @@
                         <span>Add Category</span>
                     </button>
 
-                    <input type="search" style="width: 200px;" class="form-control" placeholder="Search something...">
+                    <input type="search" oninput="search()" id="search" style="width: 200px;" class="form-control" placeholder="Search something...">
                 </div>
                 <hr>
                 <div class="form-group mt-2">
@@ -76,6 +76,7 @@
         </div>
     </div>
 
+    <!-- Add Modal -->
     <div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-sm">
             <div class="modal-content">
@@ -91,6 +92,27 @@
                 </div>
                 <div class="modal-footer">                    
                     <button type="button" onclick="save()" class="btn btn-primary w-100">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Update Modal -->
+    <div class="modal fade" id="updateModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5">Update Category</h1>
+                    <button type="button" id="updateModalCloseBtn" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input type="text" id="updateName" class="form-control">
+                    </div>
+                </div>
+                <div class="modal-footer">                    
+                    <button type="button" onclick="update()" class="btn btn-primary w-100">Update</button>
                 </div>
             </div>
         </div>
