@@ -1,16 +1,55 @@
 # Yetenek Başakşehir 1. Grup Eğitim Reposu
 
-## Daha sonra yapacağız
+## Öğrenmeniz gerekenler (YOL Haritası)
+### Angular
+### .NET
+- Clean Architecture
+-- CQRS
+---- Domain Event
+---- Behaviors
+-- Options Pattern
+-- Result Pattern
+-- Outbox Pattern
+- Domain-Driven Design
+-- Entity
+-- Value Object
+-- Domain Event
+-- Factory Pattern
+- Unit Test
+- Test-Driven Development (Optional)
+- Docker
+- RabbitMQ
+- SignalR
+--- Buradan sonraki kısım için yukarıdakileri iyice öğrenmiş olmalısınız
+- Kubernet
+- Microservice mimari
+
+### DB'lerdede
+- MSSQL
+- PostgreSQL
+- MongoDb
+- ElasticSearch
+- Redis (Cache | Db)
+
+### DevOps => Azure DevOps
+- Repo nasıl oluşturulup
+- Repodan task nasıl alınır
+- Task nasıl commitlenir
+- CI / CD süreçleri
+
+
+## Sonra Yapmak İsterseniz
 - Angular başlıyoruz
-- Birkaç uygulama yapacağız
 - OData
 - Rate Limit
 - Health Check
 - Response Compression
 
-## 29.08.2024 (Sonraki ders)
+## 29.08.2024
 - Örnek eTicaret projemize devam ediyoruz
 - CORS nedir?
+- Category CRUD işlemleri
+- Frontendinizi SPA'ya dönüştürdük
 
 ## 27.08.2024
 - Örnek eTicaret projemize devam ediyoruz

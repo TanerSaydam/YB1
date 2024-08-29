@@ -22,38 +22,22 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                        <a id="home" class="nav-link active" onclick="gotoHome()">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./categories.html">Categories</a>
-                    </li>                   
+                        <a id="categories" class="nav-link" onclick="gotoCategory()">Categories</a>
+                    </li>   
+                    <li class="nav-item">
+                        <a id="contact" class="nav-link" onclick="gotoContact()">Contact</a>
+                    </li>                
                 </ul>                
             </div>
         </div>
     </nav>
 
-    <!-- Breadcrumb -->
-    <div class="my-breadcrumb mt-4">
-        <h3>Home Page</h3>
-        <!-- <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item active" aria-current="page">Home</li>
-            </ol>
-        </nav> -->
-    </div>
-
-    <!-- İçerik -->
-    <div class="content mt-4">
-        <div class="card">
-            <div class="card-header">
-                <p>Home part</p>
-            </div>
-            <div class="card-body">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, odit mollitia commodi quod, vel quisquam explicabo quam eligendi quasi fugiat totam iusto sunt deleniti. At quo vero perspiciatis quam est!</p>
-            </div>
-        </div>
-    </div>
-    
+    <app-root></app-root>
+    <script src="./assets/route.js"></script>
+    <script src="./assets/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 

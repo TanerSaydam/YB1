@@ -1,4 +1,3 @@
-getCategories();
 let updateId = "";
 let data = [];
 let orjData = [];

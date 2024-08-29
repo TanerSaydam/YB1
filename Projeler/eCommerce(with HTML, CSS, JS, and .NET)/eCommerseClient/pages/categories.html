@@ -1,0 +1,85 @@
+<!-- Breadcrumb -->
+<div class="my-breadcrumb mt-4">
+    <h3>Categories Page</h3>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item" aria-current="page">Home</li>
+            <li class="breadcrumb-item active" aria-current="page">Categories</li>
+        </ol>
+    </nav>
+</div>
+
+<!-- İçerik -->
+<div class="content mt-4">
+    <div class="card">
+        <div class="card-header">
+            <p>Category List</p>
+        </div>
+        <div class="card-body">
+            <div class="form-group" style="display: flex; justify-content: space-between;">
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addModal">
+                    <span>Add Category</span>
+                </button>
+
+                <input type="search" oninput="search()" id="search" style="width: 200px;" class="form-control" placeholder="Search something...">
+            </div>
+            <hr>
+            <div class="form-group mt-2">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th style="width: 10%;">#</th>
+                            <th style="width: 70;">Name</th>
+                            <th style="width: 20%;">Operations</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Add Modal -->
+<div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5">Add Category</h1>
+                <button type="button" id="addModalCloseBtn" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" id="name" class="form-control">
+                </div>
+            </div>
+            <div class="modal-footer">                    
+                <button type="button" onclick="save()" class="btn btn-primary w-100">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Update Modal -->
+<div class="modal fade" id="updateModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5">Update Category</h1>
+                <button type="button" id="updateModalCloseBtn" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" id="updateName" class="form-control">
+                </div>
+            </div>
+            <div class="modal-footer">                    
+                <button type="button" onclick="update()" class="btn btn-primary w-100">Update</button>
+            </div>
+        </div>
+    </div>
+</div>
