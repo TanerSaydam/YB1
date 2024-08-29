@@ -10,7 +10,9 @@ function getCategories(){
                                 <td>${data[index].name}</td>
                                 <td>
                                     <button class="btn btn-primary me-1">Edit</button>
-                                    <button class="btn btn-danger">Delete</button>
+                                    <button class="btn btn-danger" onclick="deleteById('${data[index].id}')">
+                                        Delete
+                                    </button>
                                 </td>
                             </tr>`
             tbodyEl.innerHTML += content;
@@ -28,4 +30,17 @@ function save(){
         nameEl.value = "";
         getCategories();
     });
-}//10:20 görüşelim
+}
+
+function deleteById(id){
+    const result = confirm("You want to delete this record?");
+
+    if(result){
+        const enpoint = `https://localhost:7233/api/Categories/DeleteById/${id}`;
+        fetch(enpoint,{
+            method: "DELETE"
+        }).then(()=> {        
+            getCategories();
+        });
+    }
+}

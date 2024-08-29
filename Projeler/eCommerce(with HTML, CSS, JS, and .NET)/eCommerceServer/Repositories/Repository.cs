@@ -18,4 +18,21 @@ public abstract class Repository<T>(
         List<T> response = await context.Set<T>().AsNoTracking().ToListAsync(cancellationToken);
         return response;
     }
+
+    public async Task DeleteAsync(T entity, CancellationToken cancellationToken = default)
+    {
+        context.Remove(entity);
+        await context.SaveChangesAsync(cancellationToken);
+    }
+
+    public async Task<T?> GetByIdAsync(Guid id, CancellationToken cancellationToken = default)
+    {
+        return await context.Set<T>().FindAsync(id, cancellationToken);
+    }
+
+    public async Task UpdateAsync(T entity, CancellationToken cancellationToken = default)
+    {
+        context.Update(entity);
+        await context.SaveChangesAsync(cancellationToken);
+    }
 }
